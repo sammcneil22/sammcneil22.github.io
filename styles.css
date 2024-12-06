@@ -1,0 +1,310 @@
+/*This is the start of my css file and i moved my media query to the bottom so that it made the most recent changes when enacted.*/
+
+body {
+    margin: 0 auto;
+    background-color: #806161; 
+    max-width: 1920px;
+}
+
+/*This is the stylesheets for my top bar with nav menu and main title and i use position fixed and some other stuff to keep it stuck at the top of the screen*/
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*below is my menu button, i used some simple stuff here to make it the correct size and keep it centered properly*/
+.menu-button {
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+/*below is my image css where i have the new image and default that ill switch when the media query hits. thats why i have display none for the new image and i aslo change its aspect ratio*/
+.image-container {
+    width: 25%;
+    height: auto;
+    position: relative;
+    padding-left: 2%;
+}
+
+.default-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+.new-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 4;
+}
+
+/*the width 66% makes it basically divide the page properly so its in thirds*/
+.text-container {
+    width: 66%;
+    padding: 10px;
+}
+
+.text-half {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.inline-image {
+    display: inline-block;
+    width: 35%; 
+    height: auto;
+    margin-left: 10px; 
+    vertical-align: middle; 
+    aspect-ratio: 1;
+}
+
+/*below is my h2 css and after code where i do some stuff like setting correct margins, adjusting color and setting width*/
+h2 {
+    margin: 0;
+    position: relative;
+    color: #f542e0;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-top: 5px;
+}
+
+.mission-statement {
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/*now ive got my button css below for the couple buttons i have and im basically just lining them up correctly and making them pretty*/
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resumebut {
+    padding: 20px 395px;
+    background-color: #f542e0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #555;
+}
+
+/*below im just doing more centering getting everything lined up like my wireframe*/
+.contact-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.email {
+    margin-right: 10px; 
+}
+
+.contact-images {
+    display: flex;
+}
+
+.contact-images a {
+    margin-left: 5px; 
+}
+
+.contact-images img {
+    width: 20px; 
+    height: 20px; 
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #333; 
+    margin: 10px 0; 
+}
+
+.balls{
+    width: 50%;
+    text-align: center;
+    padding-left: 6%;
+
+}
+
+.top{
+    padding-left: 35%;
+    display: flex;
+}
+
+/*heres my menu css where i turn it from a shitty looking list into a pretty one with some nice transitions and getting rid of text decorations*/
+#nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+#nav-menu li {
+    margin-right: 15px;
+}
+
+.samweb{
+    padding-right: 30%;
+}
+
+#nav-menu a {
+    color: #f542e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-menu a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#container {
+    padding-top: 60px;
+}
+
+/*making it scroll smooth and below that changing font*/
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+/*more button code for the buttons because they have to be different as one is wider so i added the button 2 to change those settings*/
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button2 {
+    margin: 20px 0;
+    margin-left: 30%;
+    width: 50%;
+    text-align: center;
+
+    
+}
+.button2 button{
+    width: 100%;
+    margin-left: 15%;
+}
+  
+button:hover {
+    background-color: #45a049;
+}
+
+/*now we have the media query so when its small enough it switches to these styles*/
+@media screen and (max-width: 728px) {
+    /*changing background color and the sizing*/
+    #container {
+        border: 2px solid black;
+        border-radius: 15px;
+        height: 230vh;
+        min-width: 360px;
+        max-width: 640px; 
+        margin: 0 auto; 
+        background-color: #c51515; 
+        flex: auto;
+    }
+
+    /*changing the resume button to get rid of text decoration and editiing the border*/
+    .resumebut {
+        padding: 10px 20px;
+        background-color: #997979;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .top{
+        padding-left: 35%;
+        display: flex;
+        width: 50px;
+    }
+
+    /*getting rid of the old image and switching ti the new one that will be a aspect ratio of 1 to 4 for mobil screens and using important because it didnt work without it*/
+    .inline-image {
+        display: none !important;
+    }
+
+    .default-image {
+        display: none;
+    }
+
+    .new-image {
+        display: block;
+        border: 2px solid red;
+    }
+}

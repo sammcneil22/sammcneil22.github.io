@@ -1,0 +1,11 @@
+100 Word TXT final review
+--------------------------------------------------------------------------------------
+Over the course of this semester I have learned quite alot about html and also css.
+At the start I learned how to code basic things with html like headings and paragraphs. I
+then proceeded to learn about links, images and other more advanced things i could do with
+html. Then we got to CSS and learned to make things look pretty and how to make the layouts of our sites look
+better. After that we just learned more stuff about CSS and HTML and how to turn our ideas into actual websites.
+For this assignment I made my media query better and learned to change images which made my site alot better. We also learned how to host our site
+on Github pages so anybody can see it. I got better at making the layout work and having things where I want them to be.
+Overall I learned alot of great stuff in this course and my knowledge of html is alot better than it was
+and I can turn my ideas into code much easier now.
